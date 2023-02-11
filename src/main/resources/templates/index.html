@@ -4,7 +4,10 @@
 		<meta charset="UTF8" />
 		<title th:text="${titulo}"></title>
 	</head>
-		<body>
-			<h1 th:text="${titulo}"></h1>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+		<img>
+			<h1 class="color-rojo" th:text="${titulo}"></h1>
+			<h2 class="color-blue">Decorando con recursos estaticos</h2>
+			<img th:src="@{/images/spring-logo.png}" width="750" height="150"></img>
 		</body>
 </html>
